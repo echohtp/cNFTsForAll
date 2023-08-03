@@ -2,12 +2,6 @@
 import type { NextApiRequest, NextApiResponse } from 'next'
 import { TipLink } from '@tiplink/api';
 import axios from 'axios'
-import bs58 from 'bs58'
-import { Connection, Keypair, SystemProgram, Transaction, clusterApiUrl, sendAndConfirmTransaction } from '@solana/web3.js';
-
-
-const TIPLINK_MINIMUM_LAMPORTS = 4083560;
-
 
 type Data = {
   url: string
@@ -47,25 +41,7 @@ export default async function handler(
   } catch { }
 
   console.log("DONE")
-  // fund tiplink wallet
-  // load keypair for the payer
-  // const SKua = bs58.decode(process.env.BANK_PK!)
-  // const payer = Keypair.fromSecretKey(SKua)
-
-  // let transaction = new Transaction();
-  // let connection = new Connection(clusterApiUrl("mainnet-beta"), "confirmed");
-
-  // transaction.add(
-  //   SystemProgram.transfer({
-  //     fromPubkey: payer.publicKey,
-  //     toPubkey: link.keypair.publicKey,
-  //     lamports: TIPLINK_MINIMUM_LAMPORTS,
-  //   }),
-  // );
-
-  // try {
-  //   await sendAndConfirmTransaction(connection, transaction, [payer], { commitment: "confirmed" });
-  // } catch { }
+  
 
   // return url of tiplink wallet
   res.status(200).json({ url: link.url.toString() })

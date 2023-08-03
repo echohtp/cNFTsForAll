@@ -7,6 +7,8 @@ type Data = {
   url: string
 }
 
+
+// Fill this array with (nft) objects
 const _nfts = [
   {
     name: "you did it~",
@@ -35,13 +37,11 @@ export default async function handler(
 
   console.log(link.url.toString())
 
-  try {
-    console.log("MINTING")
-    await axios.post(`${process.env.NEXT_PUBLIC_UNDERDOG_ENDPOINT}/v2/projects/${2}/nfts`, nft, config)
-  } catch { }
+  console.log("MINTING")
+  await axios.post(`${process.env.NEXT_PUBLIC_UNDERDOG_ENDPOINT}/v2/projects/${2}/nfts`, nft, config)
 
   console.log("DONE")
-  
+
 
   // return url of tiplink wallet
   res.status(200).json({ url: link.url.toString() })

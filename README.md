@@ -38,8 +38,9 @@ The mission is to make NFTs more accessible and meet users wherever they are.
 
    Example:
    ```
-   NEXT_PUBLIC_UNDERDOG_API_KEY=1234567890987654321
-   NEXT_PUBLIC_UNDERDOG_ENDPOINT=https://api.underdogprotocol.com
+   NEXT_PUBLIC_UNDERDOG_API_KEY=
+   NEXT_PUBLIC_UNDERDOG_ENDPOINT=
+   NEXT_PUBLIC_UNDERDOG_PROJECT_ID=
    ```
 
 4. **Run the Application**:

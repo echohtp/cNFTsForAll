@@ -1,38 +1,63 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# cNFTs for all
 
-## Getting Started
+Welcome to "cNFTs for all"! This project is designed to automagically mint compressed NFTs using the Underdog Protocol and deposit them into a fresh Tiplink wallet. 
 
-First, run the development server:
+The mission is to make NFTs more accessible and meet users wherever they are.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+## Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Automagical Minting**: No manual intervention required. Just set it up and let the magic happen.
+- **Compressed NFTs**: Using Underdog Protocol, we mint compressed NFTs
+- **Tiplink Wallet Integration**: Newly minted NFTs are directly sent to a fresh Tiplink wallet, ensuring a seamless user experience.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+## Prerequisites
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+- Node.js (v14+ recommended)
+- Yarn or npm
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## Setup
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+1. **Clone the Repository**:
+   ```
+   git clone https://github.com/yourusername/cNFTs-for-all.git
+   cd cNFTs-for-all
+   ```
 
-## Learn More
+2. **Install Dependencies**:
+   If you're using npm:
+   ```
+   npm install
+   ```
+   If you're using Yarn:
+   ```
+   yarn
+   ```
 
-To learn more about Next.js, take a look at the following resources:
+3. **Environment Variables**:
+   Create a `.env` file in the root directory of the project. You'll fill in the necessary environment variables later.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+   Example:
+   ```
+   NEXT_PUBLIC_UNDERDOG_API_KEY=1234567890987654321
+   NEXT_PUBLIC_UNDERDOG_ENDPOINT=https://api.underdogprotocol.com
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+4. **Run the Application**:
+   If you're using npm:
+   ```
+   npm run dev
+   ```
+   If you're using Yarn:
+   ```
+   yarn dev
+   ```
 
-## Deploy on Vercel
+   This will start the Next.js development server, and the application will be accessible at `http://localhost:3000`.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Contributing
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+We welcome contributions! If you find a bug or have a feature request, please open an issue. If you'd like to contribute code, please fork the repository and submit a pull request.
+
+## License
+
+This project is licensed under the AGPL 2.0

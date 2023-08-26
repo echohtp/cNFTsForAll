@@ -38,7 +38,7 @@ export default async function handler(
   console.log(link.url.toString())
 
   console.log("MINTING")
-  await axios.post(`${process.env.NEXT_PUBLIC_UNDERDOG_ENDPOINT}/v2/projects/${2}/nfts`, nft, config)
+  await axios.post(`${process.env.NEXT_PUBLIC_UNDERDOG_ENDPOINT}/v2/projects/${process.env.NEXT_PUBLIC_UNDERDOG_PROJECT_ID}/nfts`, nft, config)
 
   console.log("DONE")
 

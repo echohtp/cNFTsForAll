@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@solana/web3.js": "^1.78.2",
+    "@tailwindcss/forms": "^0.5.5",
     "@tiplink/api": "^0.1.2",
     "@types/node": "20.4.5",
     "@types/react": "18.2.18",
@@ -21,6 +22,12 @@
     "next": "13.4.12",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-loader-spinner": "^5.3.4",
     "typescript": "5.1.6"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.15",
+    "postcss": "^8.4.28",
+    "tailwindcss": "^3.3.3"
   }
 }

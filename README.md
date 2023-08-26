@@ -17,6 +17,8 @@ The mission is to make NFTs more accessible and meet users wherever they are.
 
 ## Setup
 
+0. **Create Project with https://underdogprotocol.com/, get API key**
+
 1. **Clone the Repository**:
    ```
    git clone https://github.com/yourusername/cNFTs-for-all.git
@@ -34,7 +36,7 @@ The mission is to make NFTs more accessible and meet users wherever they are.
    ```
 
 3. **Environment Variables**:
-   Create a `.env` file in the root directory of the project. You'll fill in the necessary environment variables later.
+   Create a `.env` file in the root directory of the project. Use details from step 0.
 
    Example:
    ```

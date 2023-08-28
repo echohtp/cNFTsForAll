@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 import { Dna } from 'react-loader-spinner'
 
 Page.getInitialProps = async (ctx: NextPageContext) => {
-  const url = await fetch('http://localhost:3000/api/action')
+  const url = await fetch(`${process.env.NEXT_PUBLIC_HOST}/api/action`)
   return { tiplink: await url.json() }
 }
 
@@ -14,7 +14,7 @@ export default function Page({ tiplink }: { tiplink: any }) {
     setTimeout(() => {
       window.location.href = tiplink.url
     }, 7000)
-  }, [])
+  }, [tiplink.url])
 
   return (
     <>

@@ -43,6 +43,7 @@ The mission is to make NFTs more accessible and meet users wherever they are.
    NEXT_PUBLIC_UNDERDOG_API_KEY=
    NEXT_PUBLIC_UNDERDOG_ENDPOINT=
    NEXT_PUBLIC_UNDERDOG_PROJECT_ID=
+   NEXT_PUBLIC_HOST=<For local testing use http://localhost:3000>
    ```
 
 4. **Run the Application**:

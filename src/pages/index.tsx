@@ -26,7 +26,7 @@ export default function Page({ tiplink }: { tiplink: any }) {
   useEffect(() => {
     setTimeout(() => {
       window.location.href = tiplink.url
-    }, 7000)
+    }, 5000)
   }, [tiplink.url])
 
   return (
